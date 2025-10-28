@@ -32,32 +32,6 @@ void suspend_wakeup_init_user(void) {
     #endif
 }
 
-// layer_state_t layer_state_set_user(layer_state_t state) {
-//     switch (get_highest_layer(state)) {
-//         case 0:
-//             // Layer base - apagar efectos especiales
-//             rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
-//             rgb_matrix_sethsv(HSV_TEAL);
-//             break;
-//         case 1:
-//             // Layer 1 - Red
-//             rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
-//             rgb_matrix_sethsv(HSV_RED);
-//             break;
-//         case 2:
-//             // Layer 2 - Purple
-//             rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
-//             rgb_matrix_sethsv(HSV_PURPLE);
-//             break;
-//         case 3:
-//             // Layer 3 - Yellow
-//             rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
-//             rgb_matrix_sethsv(HSV_YELLOW);
-//             break;
-//     }
-//     return state;
-// }
-
 layer_state_t layer_state_set_user(layer_state_t state) {
     uint8_t layer = get_highest_layer(state);
 
